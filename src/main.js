@@ -14,8 +14,7 @@ Vue.use(new VueSocketIO({
     connection: SocketIO('http://localhost:8081'), //options object is Optional
     vuex: {
       store,
-      actionPrefix: 'SOCKET_',
-      mutationPrefix: 'SOCKET_'
+      actionPrefix: 'SOCKET_'
     }
   })
 );

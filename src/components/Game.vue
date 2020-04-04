@@ -16,7 +16,7 @@ export default {
       containerId: 'game-container'
     }
   },
-  async mounted() {
+  async mounted() {    
     const game = await import(/* webpackChunkName: "game" */ '@/game/game')
     this.downloaded = true
     this.$nextTick(() => {

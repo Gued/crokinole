@@ -1,13 +1,21 @@
 <template>
-  <Game />
+  <div>
+    <Game />
+    <ListenToSockets />
+  </div>
 </template>
 
 
 <script>
-import Game from '@/components/Game'
+import Game from '@/components/Game';
+import ListenToSockets from '@/components/ListenToSockets';
+
 export default {
   name: 'App',
-  components: { Game }
+  components: {
+    Game,
+    ListenToSockets
+  }
 }
 </script>
 
