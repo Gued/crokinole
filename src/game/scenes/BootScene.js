@@ -1,8 +1,4 @@
 import { Scene } from 'phaser'
-import sky from '@/game/assets/sky.png'
-import bomb from '@/game/assets/bomb.png'
-import thudMp3 from '@/game/assets/thud.mp3'
-import thudOgg from '@/game/assets/thud.ogg'
 
 
 export default class BootScene extends Scene {
@@ -11,9 +7,9 @@ export default class BootScene extends Scene {
   }
 
   preload () {
-    this.load.image('sky', sky)
-    this.load.image('bomb', bomb)
-    this.load.audio('thud', [thudMp3, thudOgg])
+    this.load.image('sky', 'http://localhost:8080/image/sky.png')
+    this.load.image('bomb', 'http://localhost:8080/image/bomb.png')
+    this.load.audio('thud', ['http://localhost:8080/audio/thud.mp3', 'http://localhost:8080/audio/thud.ogg'])
   }
 
   create () {
